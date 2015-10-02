@@ -14,3 +14,37 @@
  *= require font-awesome
  *= require_self
  */
+
+
+#siteFooter{
+    background-color: black;
+    height: auto;
+    margin-left: 6%;
+}
+
+.footer-other-sites{
+    margin-left: 5%;
+    float: left;
+}
+
+.footer-resources{
+    margin-left: 5%;
+    margin-right: 10%;
+    float: left;
+}
+
+.footer-help{
+    padding-left: 20%;
+
+}
+.help{
+    color: white;
+
+}
+ul{
+    padding-bottom: 10%;
+
+}
+li{
+    list-style: none;
+}

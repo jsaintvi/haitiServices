@@ -7,3 +7,39 @@
   z-index: 1; // the order-index is always on top of everything
   /* width: 200px;*/
 }
+
+.searchBar{
+  width: 30%;
+}
+
+.jumbotron{
+  background-image: url("/assets/img14.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.groupCategories{
+  color: cadetblue;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-size: 120%;
+  text-align: center;
+}
+
+.thumbnailDisplay{
+  widows: 30%;
+}
+
+#footer{
+  width: auto;
+  //height: 90%;
+  margin-top: 7%;
+  background-color: black;
+
+  p{
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+}
