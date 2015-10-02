@@ -16,6 +16,10 @@
  */
 
 
+
+.container{
+    margin-bottom: -20%;
+}
 #siteFooter{
     background-color: black;
     height: auto;
