@@ -48,11 +48,12 @@ group :development do
 
   gem 'byebug'
   gem 'dotenv-rails'
+  gem 'sqlite3'
 end
 
 group :production do
   gem 'rails_12factor'
-  gem 'sqlite3'
+  gem 'pg'
 
 end
 
