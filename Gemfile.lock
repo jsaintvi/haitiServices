@@ -68,6 +68,10 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    dotenv (2.0.2)
+    dotenv-rails (2.0.2)
+      dotenv (= 2.0.2)
+      railties (~> 4.0)
     erubis (2.7.0)
     execjs (2.6.0)
     font-awesome-rails (4.3.0.0)
@@ -124,6 +128,11 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.2)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.4)
+    rails_stdout_logging (0.0.4)
     railties (4.2.4)
       actionpack (= 4.2.4)
       activesupport (= 4.2.4)
@@ -179,11 +188,13 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise
+  dotenv-rails
   font-awesome-rails
   gravatarify (~> 3.0.0)
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.4)
+  rails_12factor
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form
