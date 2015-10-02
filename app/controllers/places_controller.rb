@@ -1,6 +1,6 @@
 class PlacesController < ApplicationController
   before_action :set_place, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, only: [:new, :edit, :create, :update, :destroy]
   # GET /places
   # GET /places.json
   def index
@@ -24,8 +24,8 @@ class PlacesController < ApplicationController
   # POST /places
   # POST /places.json
   def create
-    @place = Place.new(place_params)
-
+    #@place = Place.new(place_params)
+    @place = current_user.places.new(place_params)
     respond_to do |format|
       if @place.save
         format.html { redirect_to @place, notice: 'Place was successfully created.' }
@@ -69,6 +69,6 @@ class PlacesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def place_params
-      params.require(:place).permit(:name, :address, :description, :phone, :website, :user_id)
+      params.require(:place).permit(:name, :address, :description, :phone, :website)
     end
 end
