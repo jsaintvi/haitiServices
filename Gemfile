@@ -37,7 +37,7 @@ gem "font-awesome-rails"
 gem 'simple_form'
 gem 'devise'
 gem 'gravatarify', '~> 3.0.0'
-gem 'sqlite3'
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
@@ -52,7 +52,7 @@ end
 
 group :production do
   gem 'rails_12factor'
-
+  gem 'sqlite3'
 
 end
 
