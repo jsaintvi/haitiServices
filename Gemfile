@@ -37,7 +37,7 @@ gem "font-awesome-rails"
 gem 'simple_form'
 gem 'devise'
 gem 'gravatarify', '~> 3.0.0'
-
+gem 'sqlite3'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
@@ -45,13 +45,14 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'sqlite3'
+
   gem 'byebug'
   gem 'dotenv-rails'
 end
 
 group :production do
   gem 'rails_12factor'
-  #gem 'pg'
+
+
 end
 
