@@ -1,6 +1,6 @@
 <h1>Listing Places</h1>
 
-<table class="table">
+<table class="table table-striped ">
   <thead>
     <tr>
       <th>Name</th>
@@ -10,24 +10,31 @@
       <th>Website</th>
       <th>Latitude</th>
       <th>Longitude</th>
+      <th>Average Rating</th>
     </tr>
   </thead>
 
   <tbody>
     <% @places.each do |place| %>
       <tr>
-        <td><%= place.name %></td>
+        <td><%= link_to place.name, places_path(place) %></td>
         <td><%= place.address %></td>
         <td><%= place.description %></td>
         <td><%= place.phone %></td>
         <td><%= place.website %></td>
         <td><%= place.latitude %></td>
         <td><%= place.longitude %></td>
+        <td>
+          <div class="averageRating_<%= place.id %>">
+
+          </div>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-        <%= link_to 'New Place', new_place_path %>
+<% if current_user %>
+    <%= link_to 'New Place', new_place_path %>
+<% end %>
