@@ -1,49 +1,38 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-3">
+    <h3><%= @place.name %></h3>
 
-<p>
-  <strong>Name:</strong>
-  <%= @place.name %>
-</p>
+    <p>
+      <strong>Address</strong>
+      <%= @place.address %>
+    </p>
+    <p>
+      <strong>Phone</strong>
+      <%= @place.phone %>
+    </p>
+    <p>
+      <strong>Website</strong>
+      <%= @place.website %>
+    </p>
+    <p>
+      <strong>Description</strong>
+      <%= @place.description %>
+    </p>
+    <div id="map-canvas" style="width: 230px; height: 230px;">
+    </div>
+  </div>
 
-<p>
-  <strong>Address:</strong>
-  <%= @place.address %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @place.description %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @place.phone %>
-</p>
-
-<p>
-  <strong>Website:</strong>
-  <%= @place.website %>
-</p>
-
-<p>
-  <strong>Latitude</strong>
-  <%= @place.latitude %>
-</p>
-
-<p>
-  <strong>Longitude</strong>
-  <%= @place.longitude %>
-</p>
-
-
-<div id="map-canvas" style="width: 230px; height: 230px;">
-
+  <div class="col-md-9">
+    <h3>Reviews</h3>
+  </div>
 
 </div>
 
+
+<!--
 <%= link_to 'Edit', edit_place_path(@place) %> |
 <%= link_to 'Back', places_path %>
-
+-->
 
 <script type="text/javascript">
 
