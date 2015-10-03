@@ -13,9 +13,10 @@
 }
 
 .jumbotron{
-  background-image: url("/assets/img14.jpg");
+  //background-image: url("/assets/img14.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 20%;
 
 }
 
@@ -31,10 +32,11 @@
 }
 
 #footer{
-  width: auto;
+
   //height: 90%;
   margin-top: 7%;
   background-color: black;
+  width: auto;
 
   p{
     color: white;
@@ -43,3 +45,27 @@
     text-align: center;
   }
 }
+
+/*.landing_title{
+  padding-top: -230px;
+  //position: relative;
+
+}
+*/
+/*.landing{
+  background: url("18-abstract.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -50px;
+  margin-bottom: -20.9%;
+}
+*/
+.header{
+  padding-bottom: -60px;
+  margin-bottom: -60px;
+}
+
+
