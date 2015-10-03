@@ -8,6 +8,8 @@
       <th>Description</th>
       <th>Phone</th>
       <th>Website</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
     </tr>
   </thead>
 
@@ -19,12 +21,13 @@
         <td><%= place.description %></td>
         <td><%= place.phone %></td>
         <td><%= place.website %></td>
+        <td><%= place.latitude %></td>
+        <td><%= place.longitude %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-<% if current_user %>
-    <%= link_to 'New Place', new_place_path %>
-<% end %>
+
+        <%= link_to 'New Place', new_place_path %>

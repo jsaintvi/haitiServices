@@ -49,6 +49,8 @@ group :development do
   gem 'byebug'
   gem 'dotenv-rails'
   gem 'sqlite3'
+
+  gem 'geocoder'
 end
 
 group :production do
